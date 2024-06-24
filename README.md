@@ -22,6 +22,6 @@ Using the trip advisor hotel reviews dataset from kaggle ( https://www.kaggle.co
 
 3 - Provide a broad market analysis and insights of positive vs negative reviews and what categories are the most liked and disliked by customers etc... as a tableau dashboard.
 
-4 - Generate an interactive dashboard for a specific hotel, aiming to provide insights to customers ( hotels ) and increase retention ( for our company ) as a web app.
+4 - Generate an interactive dashboard for a specific hotel, aiming to provide insights ( returning customer count, number of reviews compared to past month, % of positive reviews, average speed of answer... ) to customers ( hotels ) and increase retention ( for our company ) as a web app.
 
 5 - BONUS - Give suggestions to the business owner on which hotel to pitch next about our services.
