@@ -10,14 +10,18 @@ This company uses AI and LMs to generate answers based on the user's review and 
 
 The company currently operates in France, Belgium and Spain and wants to expand its customer base and growth.
 
-Our goal is to determine which other countries in europe have the highest potential for an expansion strategy.
+Our goal is to perform sentiment analysis on the hotel reviews and classify them. Then we build a valuable report for the hotel owner containing various insights ( increase in positive reviews, increase in reviews, time saved by using our service, money saved compared to the plan cost, how quickly the reviews were repplied to... )
 
 # Approach
 
-Collecting europen countries' data relevant to the hotel industry : hotel / tourism statistics, internet usage per country, economic indicators and competitors presence.
+Using the trip advisor hotel reviews dataset from kaggle ( https://www.kaggle.com/datasets/joebeachcapital/hotel-reviews/data?select=reviews.csv ).
 
-Since this company already operates in FR, SP, and BG, we can draw insights on the key metrics for this specific business to thrive by identifying patterns in those 3 countries.
+1 - Perform sentiment analysis to classify user reviews as positive or negative ( this gives us the ratio of good/bad review for each hotel and will be used as business insight )
 
-Then we can use those metrics to identify which countries will yeild potential growth for the company.
+2 - Classify user reviews in different categories to plot by hotel which aspects to improve first. ( specific aspects such as cleanliness, staff, amenities, location, value for money, food quality, etc. ) ( Aspect Sentiment Score: Calculate sentiment scores for each aspect to identify areas of strength and weakness. )
 
-At last we predict the revenue that the company will generate in those countries.
+3 - Provide a broad market analysis and insights of positive vs negative reviews and what categories are the most liked and disliked by customers etc... as a tableau dashboard.
+
+4 - Generate an interactive dashboard for a specific hotel, aiming to provide insights to customers ( hotels ) and increase retention ( for our company ).
+
+5 - Give suggestions to the business owner on which hotel to pitch next about our services.
