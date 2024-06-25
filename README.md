@@ -15,8 +15,9 @@ Our goal is to perform sentiment analysis on the hotel reviews and classify them
 # Dataset introduction
 
 Using the trip advisor hotel reviews dataset from kaggle ( https://www.kaggle.com/datasets/joebeachcapital/hotel-reviews/data?select=reviews.csv ).
-This dataset contains tripadvisor hotel booker's reviews of hotels spanning all accross the us.
+This dataset contains two csv files : 1. ( offerings.csv ) Hotel information with their ids, number of stars and addresses. 2. ( reviews.csv ) tripadvisor hotel booker's reviews of hotels spanning all accross the us.
 
+All the hotels mentionned in this analysis are located in different states of the United States of America.
 List of localities of the hotels : New York City, Houston, San Antonio, Los Angeles, San Diego, San Francisco, Dallas, Austin, Indianapolis, Phoenix, Charlotte, Chicago, Columbus, Denver, Jacksonville, Memphis, Washington DC, Seattle, Fort Worth, Philadelphia, El Paso, Boston, San Jose, Baltimore, Detroit.
 
 # Approach
@@ -56,3 +57,13 @@ Here is a log scale to be able to visualise that there are in fact users that le
 Overall High Ratings: The majority of the ratings are 4.0 and 5.0 across all metrics. This indicates that the hotels generally receive high ratings from reviewers.
 Important to keep in mind that our text review data will be imbalanced when performing sentiment analysis.
 
+
+# Extract Transform Load
+
+All the detailed steps can be found as comments inside the python scripts contained in this git repository.
+
+
+# Cloud deployment with AWS
+
+Created an EC2 instance running ubuntu 24.04
+Created a mysql database in RDS and linked to my EC2 instance
