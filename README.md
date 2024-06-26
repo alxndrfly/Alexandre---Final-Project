@@ -57,13 +57,31 @@ Here is a log scale to be able to visualise that there are in fact users that le
 Overall High Ratings: The majority of the ratings are 4.0 and 5.0 across all metrics. This indicates that the hotels generally receive high ratings from reviewers.
 Important to keep in mind that our text review data will be imbalanced when performing sentiment analysis.
 
+# Cloud setup
+
+Created an EC2 instance running ubuntu 24.04
+Created a mysql database in RDS and linked to my EC2 instance
 
 # Extract Transform Load
 
-All the detailed steps can be found as comments inside the python scripts contained in this git repository.
+All the detailed steps can be found as comments inside the python script ETL.py contained in this git repository.
+This script takes the raw data, transforms it and stores it in a RDS mySQL database on the cloud.
+Used to build a tableau dashboard showcasing the evaluation and overview of the entire dataset.
+
+# Pseudo-labeling the data
+
+I decided to take a shortcut by using roBERTa ('siebert/sentiment-roberta-large-english') to label my data. 
+Since i have 800'000+ rows, labeling it by hand would required too much time or would be costly.
+Doing so allows me to finish the project in the required time window and include all other important aspects to showcase my skills.
+The script label_data_roBERTa.py takes in the ETL'd data from the sql database, preprocess' it for roBERTa, performs sentiment analysis and stores a tagged_reviews.csv in the sql database.
+We will use this new csv, containing only the non processed text and the POSITIVE or NEGATIVE labels to train our own models.
+
+# Model training and testing
+
 
 
 # Cloud deployment with AWS
 
-Created an EC2 instance running ubuntu 24.04
-Created a mysql database in RDS and linked to my EC2 instance
+TO FILL
+
+# 
