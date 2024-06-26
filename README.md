@@ -74,7 +74,7 @@ I decided to take a shortcut by using roBERTa ('siebert/sentiment-roberta-large-
 Since i have 800'000+ rows, labeling it by hand would required too much time or would be costly.
 Doing so allows me to finish the project in the required time window and include all other important aspects to showcase my skills.
 The script label_data_roBERTa.py takes in the ETL'd data from the sql database, preprocess' it for roBERTa, performs sentiment analysis and stores a tagged_reviews.csv in the sql database.
-We will use this new csv, containing only the non processed text and the POSITIVE or NEGATIVE labels to train our own models.
+We will use this new csv, containing only the non processed text, hotel_id and the POSITIVE or NEGATIVE labels to train our own models.
 
 # Model training and testing
 
