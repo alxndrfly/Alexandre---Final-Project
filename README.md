@@ -128,7 +128,19 @@ I recomend manually changing the amount of rows you want to use to test the mode
 
 From the model's metrics we can see that where some models fall short is in the recall for the negative reviews. It is important that we can correctly identify both classes to build reports for our customers. Therefore we will pick the model that has the highest recall and f1 score for both negative and positive classes.
 
-showing best metrics for each model trained with truncated data
+# Final metrics for each model
+
+Random Forest Classifier :
+
+![image](https://github.com/alxndrfly/Alexandre-Final-Project/assets/135460292/13f6459d-e714-4f0d-af21-776699a1a821)
+![image](https://github.com/alxndrfly/Alexandre-Final-Project/assets/135460292/796e11df-39d6-4b43-96a1-0590ee48c033)
+
+Logistic Regression :
+
+![image](https://github.com/alxndrfly/Alexandre-Final-Project/assets/135460292/59ebdc6e-4d5e-4e42-8e1d-39a76f421273)
+![image](https://github.com/alxndrfly/Alexandre-Final-Project/assets/135460292/4959245f-1e82-4f14-a29f-281781a14457)
+
+
 
 picking model
 
