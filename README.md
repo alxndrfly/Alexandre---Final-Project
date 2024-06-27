@@ -83,6 +83,7 @@ For reviews dataset :
 - Convert date_stayed to MySQL format.
 - Fill missing values in the ['service', 'cleanliness', 'overall', 'value', 'location', 'sleep_quality', 'rooms'] rating columns with the rounded mean of each column.
 - Merged the column title and text into full_text.
+- Take out the quotes as they are different types and mess up the encoding.
 - Calculate the mean rating for each rating row only, round to the nearest 0.1 and make a new column mean_rating.
 - Reset the index and save the reviews.csv in the sql_cleaned dir.
 
