@@ -64,7 +64,7 @@ Before running ETL.py ensure you have ("datasets/raw/offerings.csv") and ("datas
 All the detailed steps can be found as comments inside the python script ETL.py contained in this git repository.
 This script takes the raw data, transforms it and stores it in a directory ('datasets/sql_cleaned/file_name.csv'), for later sql injection.
 
-Detailed explanation :
+For hotels dataset :
 - Load the hotels dataset.
 - Drop columns with unnecessary info : ['region_id', 'url', 'phone', 'details', 'type'].
 - Extract and store as new columns the locality, postal code and street address contained in the column address.
@@ -73,6 +73,7 @@ Detailed explanation :
 - Fill the class column's (n of hotel stars) missing values with the mean (rounded to the nearest 0.5) of the hotels class.
 - Reset the index and save the hotel.csv in the sql_cleaned dir.
 
+For reviews dataset :
 - Load the reviews dataset.
 - Drop columns with unnecessary info : ['id', 'num_helpful_votes'].
 - Extract all the ratings in the column ratings and store each in its own column.
