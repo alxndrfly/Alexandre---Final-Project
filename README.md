@@ -33,16 +33,16 @@ List of localities of the hotels : New York City, Houston, San Antonio, Los Ange
 
 We are working with 878'561 reviews of 4,333 hotels.
 
-These 878'561 reviews were left by 536'952 unique customers. Therefore 61% of trip advisor hotel reviewers leave more than 1 review and likely book more than 1 hotel on the platform. We will be tracking returning reviewers for each hotel.
-
 Tableau link : https://public.tableau.com/app/profile/alexandre.conte/viz/EDA_Final_Project_17195263959660/Dashboard1
 
 ![Capture d'écran 2024-06-27 220737](https://github.com/alxndrfly/Alexandre-Final-Project/assets/135460292/da337634-3db7-4591-9827-cbc4a9f05402)
 
+These 878'561 reviews were left by 536'952 unique customers. Therefore 61% of trip advisor hotel reviewers leave more than 1 review and likely book more than 1 hotel on the platform. We will be tracking returning reviewers for each hotel.
+
 Overall High Ratings: The majority of the ratings are 4.0 and 5.0 across all metrics. This indicates that the hotels generally receive high ratings from reviewers.
 Important to keep in mind that our text review data will be imbalanced when performing sentiment analysis.
 
-Most hotel reviews left by tripadvisor users are from other devices ( desktop, laptop, tablet... ) than mobile phones
+Most hotel reviews left by tripadvisor users are from other devices ( desktop, laptop, tablet... ) compared to mobile phones.
 
 Most users leave only 1 review.
 
