@@ -46,11 +46,6 @@ Most hotel reviews left by tripadvisor users are from other devices ( desktop, l
 
 Most users leave only 1 review.
 
-Here is a log scale to be able to visualise that there are in fact users that leave large amounts of reviews. It is in fact very rare.
-
-![image](https://github.com/alxndrfly/Alexandre-Final-Project/assets/135460292/85ed25dd-057f-412f-8b05-66a7d7a5aac3)
-
-
 # Extract Transform Load
 
 Before running ETL.py ensure you have ("datasets/raw/offerings.csv") and ("datasets/raw/reviews.csv") in the right directory.
@@ -85,9 +80,11 @@ Used to build a tableau dashboard showcasing the evaluation and overview of the 
 
   # Pseudo-labeling the data
 
-I decided to take a shortcut by using roBERTa ('siebert/sentiment-roberta-large-english') to label my data. 
+I decided to take a shortcut by using roBERTa ('siebert/sentiment-roberta-large-english') to label my data.
+
 Since i have 800'000+ rows, labeling it by hand would required too much time or would be costly.
 Doing so allows me to finish the project in the required time window and include all other important aspects to showcase my skills.
+
 The script label_data_roBERTa.py takes in the ETL'd data from the directory sql_cleaned, preprocess' it for roBERTa, performs sentiment analysis and stores a tagged_reviews.csv in the model_data directory.
 We will use this new csv, containing only the non processed text, hotel_id and the POSITIVE or NEGATIVE labels to train our own models.
 
@@ -125,6 +122,12 @@ From the model's metrics we can see that where some models fall short is in the 
 
 # Final metrics for each model
 
+Support Vector Machine :
+
+![image](https://github.com/alxndrfly/Alexandre-Final-Project/assets/135460292/77d99649-a6a8-4f9b-9cb5-959630a3b8ea)
+![image](https://github.com/alxndrfly/Alexandre-Final-Project/assets/135460292/46cb8f1a-b1c9-47c8-b7a8-30ab358529ad)
+
+
 Random Forest Classifier :
 
 ![image](https://github.com/alxndrfly/Alexandre-Final-Project/assets/135460292/13f6459d-e714-4f0d-af21-776699a1a821)
@@ -132,23 +135,50 @@ Random Forest Classifier :
 
 Logistic Regression :
 
-![image](https://github.com/alxndrfly/Alexandre-Final-Project/assets/135460292/59ebdc6e-4d5e-4e42-8e1d-39a76f421273)
-![image](https://github.com/alxndrfly/Alexandre-Final-Project/assets/135460292/4959245f-1e82-4f14-a29f-281781a14457)
+![image](https://github.com/alxndrfly/Alexandre-Final-Project/assets/135460292/69e916e6-169e-4918-9ac7-4750591d6c02)
+![image](https://github.com/alxndrfly/Alexandre-Final-Project/assets/135460292/f31e9971-2b8e-4984-91e0-2193b42124be)
 
 
+I picked Logistic Regression as my model as it had the highest negative recall and the best metrics overall. It also had the fastest training times and can handle my large dataset in an efficient manner.
 
-picking model
+Strengths :
+- High overall metrics
+- Easy to implement
+- Simple model
+- Fast to generate predictions
+- Will classify accurately obviously positive and negative reviews.
 
-explaining stenghts
-
-explain limitations
+Limitations :
+- Since our data has been labelled by roBERTa, our classifier can only get as good as his metrics minus the error margin of roBERTa when labeling.
+- It is lacking in the predictive ability for negative comments.
+- Will be imprecise when giving predictions for mixed reviews ( reviews including both positive and negative sentiments ).
 
 # Aspect-Based Sentiment Analysis (ABSA)
 
-Here we will pick a hotel of interest and perform ABSA in order to generate a personalised report with useful insights. The goal is to provide clear value to our customers and increase retention.
+Here we picked 3 hotels of interest and perform ABSA in order to generate a personalised report with useful insights. The goal is to provide clear value to our customers and increase retention.
 
-# Cloud deployment with AWS
+I am using a pretrained BERT model to perform ABSA : ('nlptown/bert-base-multilingual-uncased-sentiment')
 
-TO FILL
+The aspects of interest are the following : aspects = ['service', 'cleanliness', 'location', 'food', 'staff', 'room', 'price', 'amenities']
 
-# 
+The model calculates a sentiment score and outputs a bar plot as well as a report by count of the negative and positive words in the reviews.
+
+See APP section for more details.
+
+
+# Building the APP with streamlit
+
+You will find a app.py file in the repo. This is the streamlit app. 
+
+Functionalities :
+- Two sections in the navigation tab : Sentiment Analysis and Reporting with ABSA.
+- Loads the model for inference.
+- Loads bert for absa.
+- Can perform sentiment analysis on review input from users and predicts using our LogisticRegression model.
+- Send the user input to OpenAI API with custom requests to get a recommended answer for the hotel and a quick summary of the positive and negative keywords included in the input.
+- For reporting : Is able to load 3 different hotel's datasets.
+- Prints a report for the hotel (one for all the data, one for the latest month's data)
+- Sends the hotel reviews dataset to the pretrained absa model to return an absa analysis ( sentiment score distribution plot for all aspects and a table with the most common positive and negative words )
+- Both the report and the absa analysis can be downloaded to txt files.
+
+# The END :)
