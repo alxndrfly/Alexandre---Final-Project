@@ -127,7 +127,6 @@ Support Vector Machine :
 ![image](https://github.com/alxndrfly/Alexandre-Final-Project/assets/135460292/77d99649-a6a8-4f9b-9cb5-959630a3b8ea)
 ![image](https://github.com/alxndrfly/Alexandre-Final-Project/assets/135460292/46cb8f1a-b1c9-47c8-b7a8-30ab358529ad)
 
-
 Random Forest Classifier :
 
 ![image](https://github.com/alxndrfly/Alexandre-Final-Project/assets/135460292/13f6459d-e714-4f0d-af21-776699a1a821)
