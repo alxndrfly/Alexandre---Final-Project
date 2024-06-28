@@ -171,7 +171,7 @@ You will find a app.py file in the repo. This is the streamlit app.
 
 Functionalities :
 - Two sections in the navigation tab : Sentiment Analysis and Reporting with ABSA.
-- Loads the model for inference.
+- Loads the LogisticRegression model for inference.
 - Loads bert for absa.
 - Can perform sentiment analysis on review input from users and predicts using our LogisticRegression model.
 - Send the user input to OpenAI API with custom requests to get a recommended answer for the hotel and a quick summary of the positive and negative keywords included in the input.
