@@ -57,6 +57,11 @@ Here is a log scale to be able to visualise that there are in fact users that le
 Overall High Ratings: The majority of the ratings are 4.0 and 5.0 across all metrics. This indicates that the hotels generally receive high ratings from reviewers.
 Important to keep in mind that our text review data will be imbalanced when performing sentiment analysis.
 
+Tableau link : https://public.tableau.com/app/profile/alexandre.conte/viz/EDA_Final_Project_17195263959660/Dashboard1
+
+![Capture d'écran 2024-06-28 083029](https://github.com/alxndrfly/Alexandre-Final-Project/assets/135460292/22d18b37-7105-41cb-9364-6fdf9fdec6fd)
+
+
 # Extract Transform Load
 
 Before running ETL.py ensure you have ("datasets/raw/offerings.csv") and ("datasets/raw/reviews.csv") in the right directory.
