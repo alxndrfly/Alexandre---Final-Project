@@ -59,7 +59,7 @@ Important to keep in mind that our text review data will be imbalanced when perf
 
 Tableau link : https://public.tableau.com/app/profile/alexandre.conte/viz/EDA_Final_Project_17195263959660/Dashboard1
 
-![Capture d'écran 2024-06-28 083029](https://github.com/alxndrfly/Alexandre-Final-Project/assets/135460292/22d18b37-7105-41cb-9364-6fdf9fdec6fd)
+![Capture d'écran 2024-06-27 220737](https://github.com/alxndrfly/Alexandre-Final-Project/assets/135460292/da337634-3db7-4591-9827-cbc4a9f05402)
 
 
 # Extract Transform Load
