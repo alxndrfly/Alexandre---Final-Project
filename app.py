@@ -21,7 +21,7 @@ vectorizer = joblib.load('app_artifacts/vectorizer.joblib')
 model = joblib.load('app_artifacts/model.joblib')
 
 # Set your OpenAI API key
-openai.api_key = 'sk-proj-iGyrDuFSIXAACmyAHpm2T3BlbkFJhvc4WuJSngvJcwkeqzho'
+openai.api_key = ''
 
 client = OpenAI(api_key=openai.api_key)
 
