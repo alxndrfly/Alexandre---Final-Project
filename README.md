@@ -190,11 +190,12 @@ Functionalities :
 
 # Examples of the App's functionalities
 
+## Sentiment Analaysis Section
 ![image](https://github.com/alxndrfly/NLP-Project/assets/135460292/0054637a-5218-4c7a-b8d1-d609ed6ea02d)
 
 ![image](https://github.com/alxndrfly/NLP-Project/assets/135460292/4e258781-6d33-43ee-91a0-60a97a002a3a)
 
-
+## Dashboard and ABSA Section
 ![image](https://github.com/alxndrfly/NLP-Project/assets/135460292/338b10a4-1cf3-47dc-adcd-6f2655ff3e05)
 ![image](https://github.com/alxndrfly/NLP-Project/assets/135460292/b0809259-37d5-44d8-b12d-b298d3f4c391)
 ![image](https://github.com/alxndrfly/NLP-Project/assets/135460292/1155f621-edbf-4c73-97db-0db099e68c13)
