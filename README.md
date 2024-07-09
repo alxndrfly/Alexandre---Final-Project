@@ -116,9 +116,17 @@ First i used only 10'000 data points from the truncated dataset to get the best 
 In the git repo you will find : random_forest.py, svmachine.py and logistic_regression.py.
 I recomend manually changing the amount of rows you want to use to test the models and type in the hyperparameters you wish to test as i decided not to include every single time i change either of these as a separate .py file. The current scripts train the models with all the truncated dataset and with the best hyperparameters from testing with 10'000 rows only. It gest logged in MLFlow for you to see and compare. Have fun with it.
 
-# Selecting the best model based on performance metrics
+# MLFlow and selecting the best model based on performance metrics
 
 From the model's metrics we can see that where some models fall short is in the recall for the negative reviews. It is important that we can correctly identify both classes to build reports for our customers. Therefore we will pick the model that has the highest recall and f1 score for both negative and positive classes.
+
+I used MLFlow to track every experiment, metrics, best parameters and artifacts (model file, classification report, confusion matrix and roc curve)
+
+![image](https://github.com/alxndrfly/NLP-Project/assets/135460292/472c3c9c-6754-4534-be84-ddd8bf36292e)
+
+
+![image](https://github.com/alxndrfly/NLP-Project/assets/135460292/6299d1f1-f60d-4167-b3da-823550b97daf)
+
 
 # Final metrics for each model
 
