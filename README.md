@@ -188,4 +188,11 @@ Functionalities :
 - Sends the hotel reviews dataset to the pretrained absa model to return an absa analysis ( sentiment score distribution plot for all aspects and a table with the most common positive and negative words )
 - Both the report and the absa analysis can be downloaded to txt files.
 
+# Examples of the App's functionalities
+
+![image](https://github.com/alxndrfly/NLP-Project/assets/135460292/0054637a-5218-4c7a-b8d1-d609ed6ea02d)
+
+![image](https://github.com/alxndrfly/NLP-Project/assets/135460292/4e258781-6d33-43ee-91a0-60a97a002a3a)
+
+
 # The END :)
