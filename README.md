@@ -195,4 +195,11 @@ Functionalities :
 ![image](https://github.com/alxndrfly/NLP-Project/assets/135460292/4e258781-6d33-43ee-91a0-60a97a002a3a)
 
 
+![image](https://github.com/alxndrfly/NLP-Project/assets/135460292/338b10a4-1cf3-47dc-adcd-6f2655ff3e05)
+![image](https://github.com/alxndrfly/NLP-Project/assets/135460292/b0809259-37d5-44d8-b12d-b298d3f4c391)
+![image](https://github.com/alxndrfly/NLP-Project/assets/135460292/1155f621-edbf-4c73-97db-0db099e68c13)
+![image](https://github.com/alxndrfly/NLP-Project/assets/135460292/99827b3b-a354-46ac-ad4b-47f2eb9c728a)
+![image](https://github.com/alxndrfly/NLP-Project/assets/135460292/c5b7c2e4-5759-4887-978b-663df378cf10)
+
+
 # The END :)
